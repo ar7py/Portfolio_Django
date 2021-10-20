@@ -1,0 +1,36 @@
+{% extends 'pfapp/base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 mx-auto mt-5">
+            <!-- Contact Form -->
+            <form class="margin" action="{% url 'contact' %}" method="POST">
+                <!-- Csrf Token -->
+                {% csrf_token %}
+                <!-- Form Content -->
+                <div class="form-group row">
+                    <label class="col-2 col form-label" for="emailinput">Email</label>
+                    <div class="col-10">
+                        <input class="form-control" name="email" type="email" id="emailinput" placeholder="name@example.com"></input>
+                    </div>
+                </div>
+                <div class="form-group row">
+                	<label class="col-2 col form-label" for="subjectinput">Subject</label>
+                	<div class="col-10">
+                		<input class="form-control" name="subject" type="text" id="subjectinput"></input>
+                	</div>
+                </div>
+                <div class="form-group row">
+                	<label class="col-2 col form-label" for="messageinput">Message</label>
+                	<div class="col-10">
+                		<textarea class="form-control" name="message" id="messageinput"></textarea>
+                	</div>
+                </div>
+                <div class="pull-right">
+                	<button class="btn btn-success float-right btn-md" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

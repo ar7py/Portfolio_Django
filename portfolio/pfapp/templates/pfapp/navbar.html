@@ -1,0 +1,30 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <!-- <img src="" width="30" height="30" class="d-inline-block align-top"> -->
+            <span class="home-brand text-white">Arnab Gupta</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mx-auto" id="navid">
+                <li class="nav-item ms-5" id="nav1">
+                    <a class="nav-link btn-sm ms-4 text-center text-white" href="{% url 'index' %}"><i class="fas fa-house-user"> Home</i></a>
+                </li>
+                <li class="nav-item ms-5" id="nav2">
+                    <a class="nav-link btn-sm ms-4 text-center text-white" href="{% url 'portfolio' %}"><i class="fas fa-tasks"> Portfolio</i></a>
+                </li>
+                <li class="nav-item ms-5" id="nav3">
+                    <a class="nav-link btn-sm ms-4 text-center text-white" href="{% url 'contact' %}"><i class="fas fa-id-badge"> Contact</i></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item ms-5">
+                    <a class="nav-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="nav-item ms-5">
+                    <a class="nav-link" href="https://github.com/ar7py"><i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,86 @@
+{% extends 'pfapp/base.html' %}
+{% block content %}
+<!-- HEADER -->
+<header class="masthead text-white text-center">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="container">
+                <img class="img-fluid mb-3 d-block mx-auto rounded-circle border border-dark float-right" src="/static/img/AG.jpg" height="120px" width="120px" alt=""></img>
+            </div>
+        </div>
+        <div class="col-md-8 mt-1">
+            <div class="container">
+                <h1 class="text-uppercase mb-0 text-dark float-left">Arnab Gupta</h1>
+                <h2 class="font-weight-dark mb-0 text-dark mt-2 float-left">Web Designer - Web Devaloper - Python - Django</h2>
+            </div>
+        </div>
+    </div>
+</header>
+<hr>
+<!-- PORTFOLIO -->
+<section class="portfolio margin" id="portfolio">
+    <div class="container">
+        <h2 class="text-uppercase text-center text-dark mb-0">Portfolio</h2>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"> Galaxy Group</h5>
+                        <p class="card-text">A Social Media Group Post WebApp Using Django</p>
+                        <a class="btn btn-success" href="https://github.com/ar7py/GalaxyGroup">Github Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Using Django</h5>
+                        <p class="card-text">A Blogging Website Uding Django</p>
+                        <a class="btn btn-success" href="https://github.com/ar7py/Django_Blog">Github Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Description For This Project</p>
+                        <a class="btn btn-success" href="#">Github Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 4</h5>
+                        <p class="card-text">Description For This Project</p>
+                        <a class="btn btn-success" href="#">Github Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<!-- ABOUT -->
+<section class="text-white mb-0 margin" id="about">
+    <div class="container">
+        <h2 class="text-center text-uppercase text-dark">About</h2>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4 ml-auto about-1">
+                <p class="lead">I'm a Web Devaloper Working On Python 3.x, Using Django 3.x For Web Devalopment.</p>
+            </div>
+            <div class="col-lg-4 mr-auto about-2">
+                <p class="lead">Also Having Knowledge Of HTML, CSS, JavaScript, Bootstrap, GIT, Web Penetration Testing, Ethical Hacking .</p>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a class="btn btn-success btn-xl btn-cv" href="#">
+                <i class="fas fa-file-download"> Download CV</i>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

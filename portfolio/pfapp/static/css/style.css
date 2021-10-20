@@ -1,0 +1,108 @@
+/* CUSTOM CSS */
+
+body {
+    background-image: none;  /* ADD BACKGROUND IMAGE */
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.margin{
+    margin-top: 40px;
+}
+
+.home-brand {
+    font-family: "Nanum Gothic";
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.nav-item{
+    font-family: "Ubuntu";
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+
+header.masthead{
+    padding-top: calc(3rem + 10px);
+    padding-bottom: 3rem;
+}
+
+hr.star-dark{
+    border-color: #2c3e50;
+}
+
+hr.star-dark, hr.star-light{
+    max-width: 15rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid .25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.star-dark:after, hr.star-light:after {
+    position: relative;
+    top: -.8em;
+    display: inline-block;
+    padding: 0 .25em;
+    content: '\f005';
+    font-family: "Nanum Gothic";
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.label {
+    color: #fff;
+}
+
+.pflink:hover a{
+    color: chocolate;
+    font-size: 22px;
+    height: 100%;
+    display: block;
+}
+
+.pflink a {
+    color: black;
+    font-size: 22px;
+    height: 100%;
+    display: block;
+}
+
+.pflink a:hover {
+    text-decoration: none;
+}
+
+.about-1 {
+    background-color: #0070e1;
+}
+
+.about-2 {
+    background-color: #007bff;
+}
+
+.btn-cv:hover {
+    background-color: #006400;
+    border: 1px solid black;
+    color: black;
+}
+
+.footer {
+    padding-top:3rem;
+    padding-bottom: 3rem;
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+        padding-top: calc(3rem + 20px);
+        padding-bottom: 3rem;
+    }
+}
